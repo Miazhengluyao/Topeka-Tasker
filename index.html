@@ -3,62 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topeka Tasker | Reliable Local Errand & Pickup Help</title>
+    <title>Topeka Tasker | Local Errand Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .service-card { transition: transform 0.2s; }
+        .service-card:hover { transform: translateY(-5px); }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
 
     <nav class="bg-white shadow-sm py-4 px-6 sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <span class="text-xl font-bold text-blue-700 font-mono">Topeka Tasker</span>
-            <a href="sms:YOUR-PHONE-NUMBER" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold">Inquire Now</a>
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-xl font-bold text-blue-700">Topeka Tasker</span>
+            <div class="hidden md:block text-sm font-medium text-slate-500 underline">Serving Topeka, KS Only</div>
+            <a href="tel:785-580-8605" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold">Call 785-580-8605</a>
         </div>
     </nav>
 
-    <header class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-20 px-6 text-center">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white">Topeka Errand & Pickup Services</h1>
-        <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto">Reliable, detailed, and respectful daytime help for your local errands. You stay home, we’ll do the driving.</p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:YOUR-PHONE-NUMBER" class="bg-white text-blue-700 px-8 py-4 rounded-full font-bold shadow-xl hover:bg-gray-100 transition">📞 Call Us</a>
-            <a href="sms:YOUR-PHONE-NUMBER" class="bg-blue-800 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:bg-blue-900 transition">💬 Text Us</a>
-        </div>
+    <header class="bg-blue-700 text-white py-16 px-6 text-center">
+        <h1 class="text-4xl font-extrabold mb-4">Premium Local Errand Help</h1>
+        <p class="text-lg opacity-90 mb-0">Professional assistance for busy Topeka residents.</p>
     </header>
 
-    <section class="max-w-5xl mx-auto py-16 px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">How We Can Help</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-blue-500">
-                <div class="text-3xl mb-4">🛒</div>
-                <h3 class="text-xl font-bold mb-2">Grocery Shopping</h3>
-                <p class="text-slate-600 text-sm">Dillon's, Walmart, Target shopping & front-door delivery.</p>
+    <section class="max-w-6xl mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Select a Service</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 service-card">
+                <div class="text-2xl mb-2">🛒</div>
+                <h3 class="font-bold text-lg">Quick Grocery Run</h3>
+                <p class="text-slate-500 text-sm mb-4">Up to 10 items from Dillon's or Hy-Vee.</p>
+                <div class="flex justify-between items-center mb-4 text-sm font-bold">
+                    <span>$20.00</span>
+                    <span class="text-blue-600">~45 Mins</span>
+                </div>
+                <a href="#request-form" class="block text-center bg-blue-50 text-blue-700 py-2 rounded font-bold hover:bg-blue-700 hover:text-white">I want this</a>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-blue-500">
-                <div class="text-3xl mb-4">📦</div>
-                <h3 class="text-xl font-bold mb-2">Pickups & Drops</h3>
-                <p class="text-slate-600 text-sm">Returns at UPS/FedEx, dry cleaning, and pharmacy pickups.</p>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 service-card">
+                <div class="text-2xl mb-2">🍎</div>
+                <h3 class="font-bold text-lg">Full Weekly Grocery</h3>
+                <p class="text-slate-500 text-sm mb-4">Full cart shopping & kitchen counter delivery.</p>
+                <div class="flex justify-between items-center mb-4 text-sm font-bold">
+                    <span>$45.00</span>
+                    <span class="text-blue-600">~90 Mins</span>
+                </div>
+                <a href="#request-form" class="block text-center bg-blue-50 text-blue-700 py-2 rounded font-bold hover:bg-blue-700 hover:text-white">I want this</a>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-blue-500">
-                <div class="text-3xl mb-4">🎁</div>
-                <h3 class="text-xl font-bold mb-2">General Errands</h3>
-                <p class="text-slate-600 text-sm">Last-minute items, local deliveries, or anything specific not listed!</p>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 service-card">
+                <div class="text-2xl mb-2">💊</div>
+                <h3 class="font-bold text-lg">Pharmacy Pickup</h3>
+                <p class="text-slate-500 text-sm mb-4">Prescription collection (ID verification required).</p>
+                <div class="flex justify-between items-center mb-4 text-sm font-bold">
+                    <span>$15.00</span>
+                    <span class="text-blue-600">~30 Mins</span>
+                </div>
+                <a href="#request-form" class="block text-center bg-blue-50 text-blue-700 py-2 rounded font-bold hover:bg-blue-700 hover:text-white">I want this</a>
             </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 service-card">
+                <div class="text-2xl mb-2">📦</div>
+                <h3 class="font-bold text-lg">Returns & Shipping</h3>
+                <p class="text-slate-500 text-sm mb-4">Drop-offs at UPS, FedEx, or USPS with receipt.</p>
+                <div class="flex justify-between items-center mb-4 text-sm font-bold">
+                    <span>$18.00</span>
+                    <span class="text-blue-600">~40 Mins</span>
+                </div>
+                <a href="#request-form" class="block text-center bg-blue-50 text-blue-700 py-2 rounded font-bold hover:bg-blue-700 hover:text-white">I want this</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 service-card">
+                <div class="text-2xl mb-2">🧺</div>
+                <h3 class="font-bold text-lg">Dry Cleaning Run</h3>
+                <p class="text-slate-500 text-sm mb-4">Drop off or pick up from any Topeka cleaner.</p>
+                <div class="flex justify-between items-center mb-4 text-sm font-bold">
+                    <span>$20.00</span>
+                    <span class="text-blue-600">~45 Mins</span>
+                </div>
+                <a href="#request-form" class="block text-center bg-blue-50 text-blue-700 py-2 rounded font-bold hover:bg-blue-700 hover:text-white">I want this</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 service-card">
+                <div class="text-2xl mb-2">🍔</div>
+                <h3 class="font-bold text-lg">Specific Food Pickup</h3>
+                <p class="text-slate-500 text-sm mb-4">Hot food delivery from local restaurants.</p>
+                <div class="flex justify-between items-center mb-4 text-sm font-bold">
+                    <span>$15.00</span>
+                    <span class="text-blue-600">~35 Mins</span>
+                </div>
+                <a href="#request-form" class="block text-center bg-blue-50 text-blue-700 py-2 rounded font-bold hover:bg-blue-700 hover:text-white">I want this</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 service-card">
+                <div class="text-2xl mb-2">☕</div>
+                <h3 class="font-bold text-lg">Gift & Flower Delivery</h3>
+                <p class="text-slate-500 text-sm mb-4">Hand-delivered gifts or flowers for occasions.</p>
+                <div class="flex justify-between items-center mb-4 text-sm font-bold">
+                    <span>$25.00</span>
+                    <span class="text-blue-600">~50 Mins</span>
+                </div>
+                <a href="#request-form" class="block text-center bg-blue-50 text-blue-700 py-2 rounded font-bold hover:bg-blue-700 hover:text-white">I want this</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 service-card">
+                <div class="text-2xl mb-2">📄</div>
+                <h3 class="font-bold text-lg">Document Courier</h3>
+                <p class="text-slate-500 text-sm mb-4">Secure transport for papers needing signatures.</p>
+                <div class="flex justify-between items-center mb-4 text-sm font-bold">
+                    <span>$30.00</span>
+                    <span class="text-blue-600">~40 Mins</span>
+                </div>
+                <a href="#request-form" class="block text-center bg-blue-50 text-blue-700 py-2 rounded font-bold hover:bg-blue-700 hover:text-white">I want this</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 service-card">
+                <div class="text-2xl mb-2">🛠️</div>
+                <h3 class="font-bold text-lg">Hardware Store Run</h3>
+                <p class="text-slate-500 text-sm mb-4">Pickups from Menards, Home Depot, or Lowe's.</p>
+                <div class="flex justify-between items-center mb-4 text-sm font-bold">
+                    <span>$35.00</span>
+                    <span class="text-blue-600">~60 Mins</span>
+                </div>
+                <a href="#request-form" class="block text-center bg-blue-50 text-blue-700 py-2 rounded font-bold hover:bg-blue-700 hover:text-white">I want this</a>
+            </div>
+
         </div>
     </section>
 
-    <section class="bg-blue-50 py-16 px-6">
-        <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-lg">
-            <h2 class="text-2xl font-bold text-center mb-6">Service Overview</h2>
-            <div class="space-y-4 text-lg">
-                <p class="flex items-center">💰 <strong class="ml-2">Rate:</strong> $20–$40 per errand (flat-rate based on task)</p>
-                <p class="flex items-center">📍 <strong class="ml-2">Area:</strong> Serving the Topeka area exclusively</p>
-                <p class="flex items-center">🕒 <strong class="ml-2">Availability:</strong> Daytime (M-F), no evenings/weekends</p>
-                <p class="flex items-center">💳 <strong class="ml-2">Payment:</strong> Shopping cost prepaid; errand fee due at drop-off</p>
-            </div>
+    <section id="request-form" class="bg-slate-100 py-16 px-6">
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg border border-slate-200">
+            <h2 class="text-2xl font-bold mb-2">Task Request Form</h2>
+            <p class="text-sm text-slate-500 mb-6">Submit your details. We will review and accept your task within 30 minutes.</p>
+            
+            <form action="https://formspree.io/f/YOUR-UNIQUE-ID" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-400 mb-1">Full Name</label>
+                    <input type="text" name="name" required class="w-full p-3 rounded-lg border border-slate-200 bg-slate-50 focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-400 mb-1">Email</label>
+                        <input type="email" name="email" required class="w-full p-3 rounded-lg border border-slate-200 bg-slate-50">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-400 mb-1">Phone</label>
+                        <input type="tel" name="phone" required class="w-full p-3 rounded-lg border border-slate-200 bg-slate-50">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-400 mb-1">Task Details (Time & Location)</label>
+                    <textarea name="message" rows="4" required placeholder="Example: Pick up groceries from Dillon's on 21st St at 2:00 PM today." class="w-full p-3 rounded-lg border border-slate-200 bg-slate-50"></textarea>
+                </div>
+                <div class="p-4 bg-yellow-50 border border-yellow-100 rounded-lg">
+                    <p class="text-xs text-yellow-700 italic">Notice: After submission, we will review your task. If accepted, you will receive a secure payment link via email/text. Payment is processed via online banking once the task is confirmed.</p>
+                </div>
+                <button type="submit" class="w-full bg-blue-700 text-white font-bold py-4 rounded-lg shadow-lg hover:bg-blue-800 transition">Submit Request</button>
+            </form>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-slate-400 text-sm">
-        <p>© 2026 Topeka Tasker. Your Trusted Neighborhood Helper.</p>
+    <footer class="py-10 text-center text-slate-400 text-xs">
+        <p>© 2026 Topeka Tasker. Serving the 666 zip codes with care.</p>
     </footer>
 
 </body>
